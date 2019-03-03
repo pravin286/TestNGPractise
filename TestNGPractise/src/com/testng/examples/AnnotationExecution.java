@@ -13,7 +13,7 @@ import org.testng.annotations.Test;
 public class AnnotationExecution 
 {
 
-	@BeforeSuite// 1
+	@BeforeSuite// Always Execute first
 	public void setSystemPropert()
 	{
 		
