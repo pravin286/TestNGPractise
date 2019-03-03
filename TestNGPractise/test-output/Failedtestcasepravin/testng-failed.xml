@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failedtestcasepravin]">
+  <test thread-count="5" name="Test123(failed)">
+    <classes>
+      <class name="com.testng.examples.SkipTestCases">
+        <methods>
+          <include name="failingTestCase"/>
+          <include name="substraction"/>
+        </methods>
+      </class> <!-- com.testng.examples.SkipTestCases -->
+    </classes>
+  </test> <!-- Test123(failed) -->
+</suite> <!-- Failed suite [Failedtestcasepravin] -->

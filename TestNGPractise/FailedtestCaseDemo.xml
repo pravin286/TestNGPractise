@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failedtestcasepravin">
+  <test  name="Test123">
+    <classes>
+      <class name="com.testng.examples.SkipTestCases"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
