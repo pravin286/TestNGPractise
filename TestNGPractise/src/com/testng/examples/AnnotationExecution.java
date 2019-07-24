@@ -10,6 +10,9 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+//Note- BeforeMethod and AfterMethod always Executed grouping   with @Test See the output
+
+
 public class AnnotationExecution 
 {
 
@@ -17,60 +20,60 @@ public class AnnotationExecution
 	public void setSystemPropert()
 	{
 		
-		System.out.println("Set Browser Property");
+		System.out.println("Before Suite Executed First--1");
 	}
 	
 	@BeforeClass//3
 	public void enterURL()
 		{
 		
-		System.out.println("Url Enter Corrected successfully");
+		System.out.println("BeforeClass Executed--3");
 	}
 	
 @Test
 public void verifyHomePageTitle()
 {
-  System.out.println("Home page title verified Successfully");	
+  System.out.println("Test Executed--5");	
 
 }
-@BeforeTest()//2
+@BeforeTest
 public void openBrowser()
 {
-	System.out.println("Browser Open Successfully");
+	System.out.println("BeforeTest Executed Second--2");
 }
 @AfterTest//8
 public void closeBrowser()
 {
-System.out.println("Browser close Successfully");	
+System.out.println("AfterTest Executed --8 ");	
 }
 
 @BeforeMethod//4
 public void userisOnHomePage()
 {
-System.out.println("User is on Home page");	
+System.out.println("BeforeMethod Executed --4");	
 }
 
 @AfterMethod//6
 public void HomePagetestVerified()
 {
-	System.out.println("Home Page Test Completed Successfully");
+	System.out.println("After Method Executed--6 ");
 
 }
 @AfterClass//7
 public void nobug()
 {
-System.out.println("No Bugs are found");	
+System.out.println("After class Executed ---7");	
 }
 @Test//5
 public void verifyallLinksOnHomePage()
 {
-	System.out.println("Links Verified Successfully");
+	System.out.println("Test Executed--5");
 }
 
 @AfterSuite//9
 public void cleaBrowserrCookiesAndCatche()
 {
-System.out.println("Catche clear successfully");	
+System.out.println("AfterSuite Exrcuted--8");	
 
 }
 
